@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: lightgoldenrodyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 400px;
+    background: rgb(254, 254, 254);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 10px 10px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.container h2{
+    font-size: 25px;
+    padding: 10px 0px;
+    border-bottom: 2px solid #595858;
+    margin-bottom: 30px;
+}
+.container h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.container h3 span{
+    background: #3362c1;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: white;
+}
+.container input{
+    border: none;
+    border-bottom: 2px solid #888888;
+    margin: 5px 0px;
+    padding: 10px 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.container input:focus{
+    outline: none;
+}
+button{
+    width: 200px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 8px;
+    background: #3362c1;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#status{
+    font-size: 1.34rem;
+    font-style: oblique;
+    font-weight: 800;
+    color: rgb(78, 6, 44);
+}
+#comment{
+    font-weight: 900;
+    color: black;
+}
+
+@media screen and (max-width: 578px) { 
+    body{
+        font-size: 1rem;
+
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+ }
